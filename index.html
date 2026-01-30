@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+
+
+
+<!--스나이퍼 링크-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="pmain.css">
+
+
+  <!--jq-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+<!--jq ui css-->
+  <!--https://jqueryui.com/accordion/#default 에서 디폴트 선택 후 밑에 복사-->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+
+
+    <!-- bxSlider JS (안정 버전 4.2.12) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+
+
+
+</head>
+<body>
+
+
+
+ 
+<div class="marquee">
+  <span>HOLLYS • COFFEE • MOMENT • EXPERIENCE • HOLLYS • COFFEE •</span>
+</div>
+   
+<input type="checkbox" id="chk_gnb">
+
+
+<nav class="menu_top">
+<li><a href="#!">로그인</a></li> 
+<li><a href="#!">회원가입</a></li> 
+<li><a href="#!">마이페이지</a></li> 
+<li><a href="#!">고객센터</a></li> 
+<button class="menu_top_btn"><a href="#!">가맹문의</a></button> 
+</nav>
+
+
+
+
+
+
+<!--메뉴-->
+  <header class="header">
+    
+
+
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.JPG" class="logo_m"></a>
+
+      <!-- <a href="index.html"><img src="./img/logo01.JPG" class="logo_pc"></a> -->
+</div>
+
+<div class="pc_ver">
+
+<div class="logo_pc">
+  <a href="index.html"><img src="./img/logo01.JPG"></a>
+</div>
+
+
+<nav class="gnb_box">
+<ul>
+<li>
+  <a href="#!">메뉴</a>
+<ul>
+
+<li><a href="sub_new.html">신메뉴</a></li>
+<li><a href="sub_m.html">음료</a></li>
+<li><a href="sub_food.html">푸드</a></li>
+<li><a href="sub_md.html">MD</a></li>
+
+</ul>
+</li>
+
+
+<li>
+  <a href="#!!">멤버십</a>
+<ul>
+<li><a href="#!">할리스 카드</a></li>  
+<li><a href="#!">스마트 오더</a></li>  
+<li><a href="#!">멤버십</a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">이벤트</a>
+<ul>
+<li><a href="#!">이벤트</a></li>  
+<li><a href="#!">뉴스</a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">스토어</a>
+<ul>
+<li><a href="#!">매장찾기</a></li>  
+<li><a href="#!">케이터링/커피트럭</a></li>  
+ 
+</ul>  
+</li>
+
+<li>
+  <a href="#!">브랜드</a>
+<ul>
+<li><a href="#!">브랜드 스토리</a></li>  
+<li><a href="#!">원두 소개</a></li>  
+<li><a href="#!">Bi</a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">커스터머</a>
+<ul>
+<li><a href="#!">본사 위치 및 연락처</a></li>  
+<li><a href="#!">채용 안내</a></li>    
+<li><a href="#!">가맹문의 및 절차</a></li>  
+<li><a href="#!">창업설명회</a></li>  
+<li><a href="#!">상담신청</a></li>  
+</ul>  
+</li>
+</ul>
+</nav>
+
+<div class="gnb_bg"></div>
+</div>
+      <div class="logo_text">
+        <p><a href="index.html">HOLLYS</a></p>
+      </div>
+
+       <label for="chk_gnb" class="berge"><img src="./img/berge.GIF"></label>
+      
+    </div>
+
+
+   
+  </header>
+
+
+
+
+  <div id="accordion" class="accordion">
+  
+  <!--  상단 타이틀 -->
+  <div class="acc_top">
+    <label for="chk_gnb" class="close_btn">✕</label>
+    <p class="acc_title">HOLLYS</p>
+  </div>
+  
+<hr class="hr_bar">
+
+  <!-- 기존 아코디언 -->
+  <h3 class="color">메뉴 <span>+</span></h3>
+  <div>
+  <p><a href="sub_new.html">신메뉴</a></p>
+  <p><a href="sub_food.html">푸드</a></p>
+  <p><a href="sub_m.html">음료</a></p>
+  <p><a href="sub_md.html">MD</a></p>
+  </div>
+
+  <h3 class="color">멤버십 <span>+</span></h3>
+  <div>
+  <p><a href="#!">할리스카드</a></p>
+  <p><a href="#!">스마트오더</a></p>
+  <p><a href="#!">멤버십</a></p>
+  </div>
+
+  <h3 class="color">이벤트 <span>+</span></h3>
+  <div>
+  <p><a href="#!">이벤트</a></p>
+  <p><a href="#!">뉴스</a></p>
+  </div>
+
+  <h3 class="color">스토어 <span>+</span></h3>
+  <div>
+  <p><a href="#!">매장찾기</a></p>
+  <p><a href="#!">케이터링/커피트럭</a></p>
+  </div>
+
+  <h3 class="color">브랜드 <span>+</span></h3>
+  <div>
+  <p><a href="#!">브랜드 소개</a></p>
+  <p><a href="#!">원두 소개</a></p>
+  <p><a href="#!">BI</a></p>
+  </div>
+
+  <h3 class="color">커스터머 <span>+</span></h3>
+  <div>
+  <p><a href="#!">본사위치 및 연락처</a></p>
+  <p><a href="#!">채용안내</a></p>
+  <p><a href="#!">창업설명회</a></p>
+  <p><a href="#!">상담신청</a></p>
+  </div>
+
+<hr class="hr_bar">
+
+
+  <div class="acc_bottom">
+    <button><a href="#!">가맹문의</a></button>
+    <button><a href="#!">고객센터</a></button>
+  </div>
+
+</div>
+
+
+<!--스나이퍼 메인-->
+
+
+ <div class="swiper mainSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="./img/m0.jpg" class="main01">
+        <img src="./img/main01.jpg" class="main02">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./img/m1.png"class="main01">
+        <img src="./img/main02.jpg"class="main02">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./img/m2.jpg"class="main01">
+        <img src="./img/main03.jpg" class="main02">
+      </div>
+
+      <div class="swiper-slide">
+       <img src="./img/m3.jpg" class="main01">
+       <img src="./img/main04.png" class="main02">
+      </div>
+      </div>
+
+   
+    <div class="swiper-button-next main-next"></div>
+    <div class="swiper-button-prev main-prev"></div>
+    <div class="swiper-pagination main-pagination"></div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="menu_title">
+  <p>신메뉴</p>
+</div>
+
+<!-- Swiper -->
+  <div class="swiper menuSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+  
+<a href="sub_m.html"><img src="./img/1.JPG" /></a>
+<br>
+<p>[NEW]</p>
+  <p>"ICED 너티 초콜릿"</p>
+      </div>
+  
+
+      <div class="swiper-slide">
+        <a href="sub_m.html"><img src="./img/2.JPG" /></a>
+        <br>
+        <p>[NEW]</p>
+        <p>"(EX) 치즈폼 딸기라떼"(ICED Only)"</p>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="sub_m.html"><img src="./img/3.JPG"/></a>
+        <br>
+        <p>[NEW]</p>
+
+  <p>"(EX) ICED 딸기 초코 라떼" </p>
+      </div>
+
+      <div class="swiper-slide">
+  <a href="sub_food.html"><img src="./img/4.JPG"/></a>
+  <br>
+  <p>[NEW]</p>
+
+  <p>"바닐라 아이스크림 군고구마""</p>
+      </div>
+
+      <div class="swiper-slide">
+   <a href="sub_food.html"><img src="./img/5.JPG"/></a>
+   <br>
+   <p>[NEW]</p>
+
+  <p>"딸기 쏙쏙 모찌떡"</p>
+      </div>
+
+   
+    </div>
+    <div class="swiper-pagination menu-pigination"></div>
+  </div>
+
+
+
+<div class="store_big">
+
+<div class="member_box">
+    <div class="track">
+
+  <a href="#!"><img src="./img/member/membership01.png"></a>
+  <a href="#!"><img src="./img/member/membership02.png"></a>
+  <a href="#!"><img src="./img/member/membership03.png"></a>
+  <a href="#!"><img src="./img/member/membership04.png"></a>
+<!-- <a href="#!" class="text_slide"><p>할리스 멤버십에 가입하세요!</p></a> -->
+<a href="#!"><img src="./img/member/membership05.png"></a>
+ <a href="#!"><img src="./img/member/membership06.png"></a>
+
+</div>
+</div>
+<!-- <button class="member_btn"><a href="#!">멤버십 가입</a></button>  -->
+
+
+
+
+
+
+
+<div class="store_box">
+  <a href="#!"><img src="./img/store_img.jpg"></a>
+  <button><a href="#!">E - 스토어</a></button> 
+<!-- </div> -->
+
+<div class="store_text">
+  <a href="#!">
+  <p>브랜드 스토리</p> 
+  <hr class="hr_bar">
+  <p>HOLLYS CROWN</p>
+  <P>커피의 즐거움을 만드는 작은 차이의 미학</P>
+  <p>CROWN (왕관) 형상은 할리스를 매개로 고객과 바리스타가 손을 맛잡고 있는 형태를 상징합니다.</p>
+  <br>
+  <P>이는 할리스를 방문하시는 고객의 이야기에 귀 기울이고 진심을 담아 서비스하는 마음을 담고 있습니다.</P>
+  <br>
+  </a>
+  <img src="./img/store_t.JPG">
+
+ <!-- <img src="./img/story_t01.JPG" class="store_001"> -->
+</div>
+</div>
+
+
+</div>
+
+
+<div class="frame">
+
+  <iframe width="1000"; height="500px";   src="https://www.youtube.com/embed/LvD0HtqRbYw" title="✨ENJOY YOUR HOLLYS✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+<div class="Franchise_box">
+  
+  <img src="./img/Franchise_img.JPG">
+
+  <button><a href="#!">가맹문의</a></button>
+</div>
+
+
+
+<div class="map_box">
+  <div class="map_title">
+    <p>할리스 매장 검색</p>
+    </div>
+    <input type="search" class="search_box"placeholder=" 검색어를 입력하세요.">
+<p><a href="https://m.hollys.co.kr/store/korStore2.do" class="search_map">전체 매장찾기</a></p>
+
+<!-- <input type="button" value="전체 매장찾기" class="btn"  onclick="execDaumPostcode()"><br> -->
+</div>
+
+</div>
+
+
+
+<section class="event_big_box">
+
+<!--이벤트 사진-->
+
+  <div class="event_viewbox">
+    <img src="./img/event01-1.jpg">
+    
+</div>
+
+
+
+
+<!--이벤트 박스 --->
+<div class="event_box">
+  <div class="event_text">
+    <p>이벤트 & 뉴스  </p>
+  
+  </div>
+    
+    <div class="event_box02">
+      
+      <div class="event_box01">
+        <p> EVENT </p>
+          <hr>
+
+        <p class="btn" data-img="./img/event01-1.jpg">[NEW] 부드러움 한 모금에,겨울이 쉬어갑니다.</p>
+      
+
+        <p>2026/01/13  ~ 2026/03/10<p>
+  
+      </div>
+      
+      <div class="event_box01">
+        <p> EVENT </p>
+               <hr>
+        <p class="btn" data-img="./img/event02-1.jpg">[NEW] "춘식이 세트" 따듯한 겨울 보내세요.</p>
+        
+    <p>2026/01/11 ~ 2026/02/18</p>
+ 
+       <!-- <p>2025/12/11</p>
+       <p>~</p>
+       <p>2026/01/18</p> -->
+    </div>
+
+
+    
+    
+    <div class="event_box01">
+      <p> EVENT</p>
+           <hr>
+        <p class="btn" data-img="./img/event03-1.jpg">[NEW] "지개함 티라미수 케이크 출시"
+        사전 예약 하세요.</p>
+<p>2026/01/11 ~ 2026/04/28</p>
+
+    
+      <!-- <p>2025/12/11</p>
+      <p>~</p>
+      <p> 2025/12/20</p> -->
+    </div>
+    
+
+
+  </div>
+  <button><a href="#!">보러가기</a></button>
+</div>
+
+
+
+</section>
+
+
+<div class="place_box">
+  <div class="place_text">
+    <p>#HOLLYS_PLACE</p>
+    <p>전국의 할리스를 한눈에</p>
+  </div>
+    <div class="place_box01">
+     <p>@official.hollys</p> 
+    </div> 
+</div>
+
+
+    <div class=" place_box02">
+
+   
+        <div class="place_photo02"> 
+          
+          <a href="#!">  <img src="./img/1-1.jpg"></a>
+        
+        </div>
+
+            <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/2-1.jpg"></a>
+      </div>
+
+               <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/3-1.jpg"></a>
+      </div>
+
+             <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/4-1.jpg"></a>
+      </div>
+        <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/5-1.jpg"></a>
+      </div>
+
+            <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/6-1.jpg"></a>
+      </div>
+
+               <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/7-1.png"></a>
+      </div>
+
+             <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/8-1.png"></a>
+      </div>
+      
+                 <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/9-1.png"></a>
+      </div>
+      
+
+                 <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/10-1.PNG"></a>
+      </div>
+      
+
+                 <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/11-1.jpg"></a>
+      </div>
+ 
+                 <div class="place_photo02"> 
+      <a href="#!">   <img src="./img/12-1.JPG"></a>
+      </div>
+ 
+
+
+    </div>
+
+
+
+
+
+<footer class="footer">
+
+      <div class="footer_menu">
+      
+        <p><a href="#!">개인정보 처리 방침 </a></p>
+      
+        <p><a href="#!">서비스이용약관</a></p>
+        <p><a href="#!">멤버십이용약관</a></p>
+        
+      </div>
+
+      <div class="footer_menu">
+        <p><a href="#!">할리스카드이용약관 </a></p>
+
+        <p><a href="#!">사이트맵 </a></p>
+        <p><a href="#!">BI 소개</a></p>
+        <p><a href="#!">고객문의 </a></p>
+        
+      </div>
+      
+  
+        <hr class="hr_bar01">
+
+      <div class="footer_text">
+        <p>법인명: (주)케이지에프앤비</p>
+        <p>대표자: 윤석찬</p>
+        <p>사업자등록번호: 211-87-61044</p>
+        <p>통신판매업: 제2019-서울종로-0193호</p>
+        <p>주소: 서울특별시 중구 통일로 92, 9층 (순화동,케이지타워)</p>
+        <p>대표전화: 02-2188-7100</p>
+        <p>가맹문의: 02-6350-7229</p>
+        <hr class="hr_bar01">
+        <p>COPYRIGHT &copy; KG F&B.All Right Reserved</p>
+      </div>
+
+
+      <div class="sns_box">
+      <a href="#!">  <img src="./img/insta01.JPG"></a>
+      <a href="#!">  <img src="./img/face.GIF"></a>
+      <a href="#!">  <img src="./img/youtu.GIF"></a>
+
+
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+<script src="pmain.js"></script>
+
+
+<!--메인-->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var mainswiper = new Swiper(".mainSwiper", {
+    pagination: {
+      el: ".main-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".main-next",
+      prevEl: ".main-prev",
+    },
+  });
+  </script>
+
+<!--메뉴-->
+ <!-- Initialize Swiper -->
+  <script>
+   var menuswiper = new Swiper(".menuSwiper", {
+effect: "coverflow",
+grabCursor: true,
+centeredSlides: true,
+loop: true, // ← loop 추가 (핵심)
+
+
+coverflowEffect: {
+rotate: 50,
+stretch: 0,
+depth: 100,
+modifier: 1,
+slideShadows: true,
+},
+
+
+pagination: {
+el: ".menu-pagination",
+clickable: true,
+},
+
+
+breakpoints: {
+0: { // 모바일
+slidesPerView: 1,
+},
+768:{
+  slidesPerView: 2,
+},
+1204: { // PC
+slidesPerView: 3,
+},
+},
+});
+  </script>
+
+
+</body>
+</html>

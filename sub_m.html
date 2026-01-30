@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+  
+  <link rel="stylesheet" href="sub_m.css">
+  <!-- <link rel="stylesheet" href="과제.js"> -->
+
+  
+
+  <!--jq-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+<!--jq ui css-->
+  <!--https://jqueryui.com/accordion/#default 에서 디폴트 선택 후 밑에 복사-->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+
+
+    <!-- bxSlider JS (안정 버전 4.2.12) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+
+
+</head> 
+<body>
+  
+
+
+
+
+
+
+<input type="checkbox" id="chk_gnb">
+
+
+<nav class="menu_top">
+<li><a href="#!">로그인</a></li> 
+<li><a href="#!">회원가입</a></li> 
+<li><a href="#!">마이페이지</a></li> 
+<li><a href="#!">고객센터</a></li> 
+<button class="menu_top_btn"><a href="#!">가맹문의</a></button> 
+</nav>
+
+
+<!--메뉴-->
+  <header class="header">
+    
+
+
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.JPG" class="logo_m"></a>
+
+      <!-- <a href="index.html"><img src="./img/logo01.JPG" class="logo_pc"></a> -->
+</div>
+
+<div class="pc_ver">
+
+<div class="logo_pc">
+  <a href="index.html"><img src="./img/logo01.JPG"></a>
+</div>
+
+
+<nav class="gnb_box">
+<ul>
+<li>
+  <a href="#!">메뉴</a>
+<ul>
+
+<li><a href="sub_new.html">신메뉴</a></li>
+<li><a href="sub_m.html">음료</a></li>
+<li><a href="sub_food.html">푸드</a></li>
+<li><a href="sub_md.html">MD</a></li>
+
+</ul>
+</li>
+
+
+<li>
+  <a href="#!">멤버십</a>
+<ul>
+<li><a href="#!">할리스 카드</a></li>  
+<li><a href="#!">스마트 오더</a></li>  
+<li><a href="#!">멤버십</a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">이벤트</a>
+<ul>
+<li><a href="#!">이벤트</a></li>  
+<li><a href="#!">뉴스</a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">스토어</a>
+<ul>
+<li><a href="#!">매장찾기</a></li>  
+<li><a href="#!">케이터링/커피트럭</a></li>  
+ 
+</ul>  
+</li>
+
+<li>
+  <a href="#!">브랜드</a>
+<ul>
+<li><a href="#!">브랜드 스토리</a></li>  
+<li><a href="#!">원두 소개</a></li>  
+<li><a href="#!">Bi/a></li>  
+</ul>  
+</li>
+
+<li>
+  <a href="#!">커스터머</a>
+<ul>
+<li><a href="#!">본사 위치 및 연락처</a></li>  
+<li><a href="#!">채용 안내</a></li>    
+<li><a href="#!">가맹문의 및 절차</a></li>  
+<li><a href="#!">창업설명회</a></li>  
+<li><a href="#!">상담신청</a></li>  
+</ul>  
+</li>
+</ul>
+
+
+</nav>
+<div class="gnb_bg"></div>
+</div>
+      <div class="logo_text">
+        <p><a href="index.html">HOLLYS</a></p>
+      </div>
+
+       <label for="chk_gnb" class="berge"><img src="./img/berge.GIF"></label>
+      
+    </div>
+
+
+   
+  </header>
+
+  <div id="accordion" class="accordion">
+  
+  <!--  상단 타이틀 -->
+  <div class="acc_top">
+    <label for="chk_gnb" class="close_btn">✕</label>
+    <p class="acc_title">HOLLYS</p>
+  </div>
+  
+<hr class="hr_bar">
+
+  <!-- 기존 아코디언 -->
+  <h3 class="color">메뉴 <span>+</span></h3>
+  <div>
+  <p><a href="#!">신메뉴</a></p>
+  <p><a href="sub_food.html">푸드</a></p>
+  <p><a href="sub_m.html">음료</a></p>
+  <p><a href="sub_md.html">MD</a></p>
+  
+  </div>
+
+  <h3 class="color">멤버십 <span>+</span></h3>
+  <div>
+  <p><a href="#!">할리스카드</a></p>
+  <p><a href="#!">스마트오더</a></p>
+  <p><a href="#!">멤버십</a></p>
+  </div>
+
+  <h3 class="color">이벤트 <span>+</span></h3>
+  <div>
+  <p><a href="#!">이벤트</a></p>
+  <p><a href="#!">뉴스</a></p>
+  </div>
+
+  <h3 class="color">스토어 <span>+</span></h3>
+  <div>
+  <p><a href="#!">매장찾기</a></p>
+  <p><a href="#!">케이터링/커피트럭</a></p>
+  </div>
+
+  <h3 class="color">브랜드 <span>+</span></h3>
+  <div>
+  <p><a href="#!">브랜드 소개</a></p>
+  <p><a href="#!">원두 소개</a></p>
+  <p><a href="#!">BI</a></p>
+  </div>
+
+  <h3 class="color">커스터머 <span>+</span></h3>
+  <div>
+  <p><a href="#!">본사위치 및 연락처</a></p>
+  <p><a href="#!">채용안내</a></p>
+  <p><a href="#!">창업설명회</a></p>
+  <p><a href="#!">상담신청</a></p>
+  </div>
+
+<hr class="hr_bar">
+
+
+  <div class="acc_bottom">
+    <button><a href="#!">가맹문의</a></button>
+    <button><a href="#!">고객센터</a></button>
+  </div>
+</div>
+
+
+<div class="main_box">
+
+  <p>음료</p>
+  </div>
+
+
+
+<div class="Coordinates_box">
+  <p>메뉴 > 음료</p>
+</div>
+
+
+
+<input type="radio" name="menu" id="new">
+<input type="radio" name="menu" id="drink"checked>
+<input type="radio" name="menu" id="food">
+<input type="radio" name="menu" id="md">
+
+
+<input type="checkbox" id="more_btn">
+
+
+<!-- 버튼: 가운데 정렬 -->
+<div class="menu_buttons">
+ 
+  <input type="radio" name="menu" id="new">
+  <label for="new"><a href="sub_new.html">신메뉴</a></label>
+  
+  <input type="radio" name="menu" id="drink">
+  <label for="drink"><a href="sub_m.html">음료</a></label>
+
+  <input type="radio" name="menu" id="food">
+  <label for="food"><a href="sub_food.html">푸드</a></label>
+  
+  <input type="radio" name="menu" id="md">
+  <label for="md"><a href="sub_md.html">MD상품</a></label>
+
+
+</div>
+
+<!----메뉴 검색-->
+
+  <div class="menu_box01">
+    <div class="menu_text">
+<a href="#!"><img src="./img/00.png"></a>
+      <p>메뉴 검색</p>
+      <input type="search" class="search_box" placeholder="메뉴를 검색하세요.">
+    </div>
+
+
+
+    <hr class="hr_bar02">
+
+    <div class="menu_box02">
+
+   <div class="menucheck"> <label><input type="checkbox">커피</label></div>
+   <div class="menucheck"> <label><input type="checkbox">라떼</label></div>
+   <div class="menucheck"> <label><input type="checkbox">디카페인</label></div>
+   <div class="menucheck"> <label><input type="checkbox">쉐이크</label></div>
+   <div class="menucheck"> <label><input type="checkbox">에이드</label></div>
+   <div class="menucheck"> <label><input 
+  type="checkbox">차</label></div>
+    </div>
+  </div>
+
+
+<!--설명 박스-->
+
+ <div id="modal" class="box-bg">
+    <div class="modal-body">
+    <h3 id="modal-name">상품</h3>
+    <p id="modal-eng">영어</p>
+    <p id="modal-desc">설명"</p>
+    <hr>
+    <p id="modal-kcal">칼로리</p>
+    <p id="modal-sugar">당류</p>
+    <p id="modal-prot">단백질</p>
+   <p id="modal-fat">포하지방</p>
+    <p id="modal-na">나트륨</p>
+    <p id="modal-caf">카페인</p>
+      <hr>
+
+      <button class="store-btn">E-스토어 방문</button>
+      <button class="close-btn">닫기</button>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+<!-- 신메뉴 -->
+<div class="menu_list new">
+  <div class="item"><img src="./img/new/1.png" class="open-btn"
+    data-name="설향 딸기 요거트 할리치노"
+    data-eng="Strawberry Yogurt Hollyccino"
+    data-desc="달콤한 설향딸기와 진한 요거트가 어우러진 딸기 요거트 할리치노"
+    data-kcal="324 Kcal"
+    data-sugar="262g (62%)"
+    data-prot="6g (11%)"
+    data-fat="3.7g (25%)"
+    data-na="105g (5%)"
+    data-caf="-"
+   
+    ></div>
+  <div class="item"><img src="./img/new/2.jpg" class="open-btn"
+    data-name="춘식이 군고구마 라떼"
+    data-eng="Sweet Potato Latte"
+    data-desc="고구마 요정 춘식이의 달콤한 마법으로 완성한 부드러운 크림 군고구마 라떼"
+    data-kcal="421 Kcal"
+    data-sugar="9g (17%)"
+    data-prot="10.9g (72%)"
+    data-fat="0.1g/1%"
+    data-na="165mg (8%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/3.png" class="open-btn"
+       data-name="저당 레드 시나몬 뱅쇼"
+    data-eng="Low Sugar Red Cinnamon Vin Chaud"
+    data-desc="시나몬과 과일 향이 은은하게 어우러진 깊고 부드러운 와인 풍미의 저당 무알콜 뱅쇼"
+    data-kcal="32 Kcal"
+    data-sugar="2g (2%)"
+    data-prot="0g (1%)%"
+    data-fat="0.0g (0%)"
+    data-na="	97mg (5%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/4.png" class="open-btn"
+       data-name="설향 딸기 라떼"
+    data-eng="Strawberry Latte"
+    data-desc="부드러운 우유와 상큼한 딸기의 만남! 국내산 설향 딸기 가득 시즌 한정 딸기 라떼"
+    data-kcal="352 Kcal"
+    data-sugar="64g (64%)"
+    data-prot="6g (11%)"
+    data-fat="4.3g (28%)"
+    data-na="20mg (1%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/5.png" class="open-btn"
+       data-name="설향 딸기 아사이볼 스무디"
+    data-eng="Strawberry Acai Bowl Smoothie"
+    data-desc="아사이베리, 블루베리, 사과로 만든 아사이볼에 수제 그래놀라와 설향 딸기 듬뿍!"
+    data-kcal="290 Kcal"
+    data-sugar="60g (60%)"
+    data-prot="2g (4%)"
+    data-fat="0.2g (1%)"
+    data-na="62mg (3%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/6.png" class="open-btn"
+    data-name="핸디 라운드 텀블러 (초코요정 춘식)"
+    data-eng="HANDY ROUND TUMBLER (CHOCO FAIRY CHUNSIK)"
+    data-desc="튼튼한 스테인리스 316 소재와 완전 밀폐 구조로 샘 걱정 없이 오래 사용하는 데일리 텀블러"
+    
+    ></div>
+  <div class="item"><img src="./img/new/7.jpg" class="open-btn"
+    data-name="춘식이 땅콩 크림라떼"
+    data-eng="Peanut Cream Latte"
+    data-desc="고소하고 진한 땅콩 크림에 스페셜티 블렌드 커피가 부드럽게 어우러진 크림라떼"
+    data-kcal="420 Kcal"
+    data-sugar="35g (35%)"
+    data-prot="13g (24%)"
+    data-fat="12.5g (83%)"
+    data-na="228mg (11%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/8.png" class="open-btn"
+    data-name="할리베어 보냉파우치"
+    data-eng="HOLLYBEAR COOLER POUCH"
+    data-desc="넉넉한 사이즈와 3중 소재로 우수한 보냉력을 가진 할리베어 보냉파우치"
+   
+    
+    ></div>
+  <div class="item"><img src="./img/new/9.png" class="open-btn"
+       data-name="딸기 그래놀라 요거트 한 컵"
+    data-eng="Strawberry Granola Yogurt Cup"
+    data-desc="속이 편한 락토프리 요거트에 달콤한 딸기를 더해 수제 그래놀라와 함께 즐기는 디저트컵"
+    data-kcal="360 Kcal"
+    data-sugar="25g (25%)"
+    data-prot="13g (23%)"
+    data-fat="4.8g (32%)"
+    data-na="120mg (6%)"
+    data-caf="-"
+    
+    ></div>
+  <div class="item"><img src="./img/new/10.png" class="open-btn"
+    data-name="홀리데이 모엣샹동 케이크 세트"
+    data-eng="Holiday Moet & Chandon Cake Set"
+    data-desc="한 해의 마무리를 더욱 빛내줄 파티 감성을 담은 리미티드 세트
+특별한 순간을 샴페인의 황금빛 스파클처럼 화려하게 완성하세요"
+    data-kcal="330 Kcal"
+    data-sugar="19 (19%)"
+    data-prot="4g (7%)"
+    data-fat="16.0g (107%)"
+    data-na="237mg (12%)"
+    
+    ></div>
+  <div class="item"><img src="./img/new/11.png" class="open-btn"
+     data-name="딸기 말차 롤라운드"
+    data-eng="Strawberry Matcha Round Cake"
+    data-desc="진한 말차 맛 그대로 담은 케이크 위에 달콤한 설향 딸기를 더한 미니 라운드"
+    data-kcal="412 Kcal"
+    data-sugar="30g/30%"
+    data-prot="8g (15%)"
+    data-fat="12.4g (82%)"
+    data-na="196mg (10%)"
+    
+    ></div>
+  <div class="item"><img src="./img/new/12.png" class="open-btn"
+    data-name="요정 춘식 랜덤 피규어 키링"
+    data-eng="FAIRY CHUNSIK RANDOM FIGURE KEYRING"
+    data-desc="귀여운 요정 춘식이가 랜덤으로 들어있는 피규어 키링"
+    
+    ></div>
+ 
+</div>
+
+
+
+<!-- 음료 메뉴 -->
+<div class="menu_list drink">
+   <div class="item"><img src="./img/drink/1.png" class="open-btn"
+    data-name="토마토 생과일 주스"
+    data-eng="Tomato Juice"
+    data-desc="신선한 코마토를 그대로 갈아 만든 주스에 토마토를 듬뿍 토핑한 생과일 주스"
+    data-kcal="144 Kcal"
+    data-sugar="28g/28%"
+    data-prot="3g/6%"
+    data-fat="0.1g/1%"
+    data-na="6mg/0%"
+    data-caf="-"
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/2.png" class="open-btn"
+    data-name="오렌지 자몽 생과일 주스"
+    data-eng="Orange Grapefruit Juice"
+    data-desc="오렌지와 자몽을 그대로 갈아 만들어 상큼함 그 자체 생과일 주스"
+    data-kcal="190 Kcal"
+    data-sugar="39g/39%"
+    data-prot="2g/4%"
+    data-fat="0.1g/0%"
+    data-na="23mg/1%"
+    data-caf="-"
+    
+    ></div>
+   <div class="item"><img src="./img/drink/3.png" class="open-btn"
+    data-name="피치 딸기 블렌디드"
+    data-eng="Peach Strawberry Blended"
+    data-desc="과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 블렌디드 음료"
+    data-kcal="193 Kcal"
+    data-sugar="47g/47%"
+    data-prot="0g/0%"
+    data-fat="0g/0%"
+    data-na="9mg/0%"
+    data-caf="-"
+    
+    ></div>
+   <div class="item"><img src="./img/drink/4.png" class="open-btn"
+    data-name="애플망고 스무디"
+    data-eng="Apple Mango Smoothie"
+    data-desc="상큼 달콤한 애플망고 과육을 갈아 만든 과일 스무디"
+    data-kcal="260 Kcal"
+    data-sugar="49g/49%"
+    data-prot="1g/2%"
+    data-fat="1g/2%"
+    data-na="14mg/0%"
+    data-caf="-"
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/5.png" class="open-btn"
+     data-name="피치 딸기 블렌디드"
+    data-eng="Peach Strawberry Blended"
+    data-desc="과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 블렌디드 음료"
+    data-kcal="193 Kcal"
+    data-sugar="47g/47%"
+    data-prot="0g/0%"
+    data-fat="0g/0%"
+    data-na="9mg/0%"
+    data-caf="-"  
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/6.png" class="open-btn"
+      data-name="딸기 스무디"
+    data-eng="Strawberry Smoothie"
+    data-desc="딸기 본연의 맛을 살려 갈아 만든 과일 스무"
+    data-kcal="247 Kcal"
+    data-sugar="44g/44%"
+    data-prot="2g/4%"
+    data-fat="0g/0%"
+    data-na="44mg/2%"
+    data-caf="-" 
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/7.png" class="open-btn"
+       data-name="사과 비트 착즙 주스"
+    data-eng="A사과, 비트, 파인애플이 어우러진 건강한 과채 주스"
+    data-kcal="125 Kcal"
+    data-sugar="25g/25%"
+    data-prot="1g/2%"
+    data-fat="0g/0%"
+    data-na="45mg/2%"
+    data-caf="-"
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/8.png" class="open-btn"
+    data-name="로얄 밀크 버블티"
+    data-eng="Royal Milk Bubble Tea"
+    data-desc="향긋한 홍차의 풍미와 부드러운 우유가 쫀득한 타피오카펄과 만나 고소하게 즐기는 버블티"
+    data-kcal="352 Kcal"
+    data-sugar="30g/30%"
+    data-prot="6g/12%"
+    data-fat="4.2g/28%"
+    data-na="100mg/5%"
+    data-caf="51mg"
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/9.png" class="open-btn"
+     data-name="흑당 버블티"
+    data-eng="Black Sugar Bubble Tea"
+    data-desc="흑당의 진한 풍미에 쫀득한 타피오카펄을 더해 달달하게 즐기는 버블티"
+    data-kcal="316 Kcal"
+    data-sugar="34/34%"
+    data-prot="5g/9%"
+    data-fat="3.7g/25%"
+    data-na="108mg/5%"
+    data-caf="-"
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/10.png" class="open-btn"
+     data-name="고흥 유자차"
+    data-eng="Goheung Yuzu Tea"
+    data-desc="고흥 유자의 풍미를 살린 할리스 유자차"
+    data-kcal="252 Kcal"
+    data-sugar="50g/50%"
+    data-prot="0g/0%"
+    data-fat="0g/0%"
+    data-na="23mg/1%"
+    data-caf="-"
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/11.png" class="open-btn"
+       data-name="홍자몽차"
+    data-eng="Red Grapefruit Tea"
+    data-desc="자몽과일 특유의 달콤 쌉싸름한 맛을 즐길 수 있는 과일차"
+    data-kcal="136 Kcal"
+    data-sugar="32/32%"
+    data-prot="1g/2%"
+    data-fat="0g/0%"
+    data-na="8mg/0%"
+    data-caf="-"
+    
+    
+    
+    
+    
+    ></div>
+   <div class="item"><img src="./img/drink/12.png" class="open-btn"
+    data-name="청포도 케일 착즙 주스"
+    data-eng="Green Grape Kale Juice"
+    data-desc="청포도, 케일, 밀싹이 어우러진 산뜻한 과채 주스"
+    data-kcal="129 Kcal"
+    data-sugar="27g/27%"
+    data-prot="1g/2%"
+    data-fat="0g/0%"
+    data-na="29mg/1%"
+    data-caf="-"
+    
+    ></div>
+
+</div>
+
+<!-- 푸드 메뉴 -->
+<div class="menu_list food">
+  <div class="item"><img src="./img/food/1.png" class="open-btn"
+    data-name="딸기 말차 롤라운드"
+    data-eng="Strawberry Matcha Round Cake"
+    data-desc="진한 말차 맛 그대로 담은 케이크 위에 달콤한 설향 딸기를 더한 미니 라운드"
+    data-kcal="412 Kcal"
+    data-sugar="30g/30%"
+    data-prot="8g (15%)"
+    data-fat="12.4g (82%)"
+    data-na="196mg (10%)"
+   
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/2.png" class="open-btn"
+     data-name="딸기 그래놀라 요거트 한 컵"
+    data-eng="Strawberry Granola Yogurt Cup"
+    data-desc="속이 편한 락토프리 요거트에 달콤한 딸기를 더해 수제 그래놀라와 함께 즐기는 디저트컵"
+    data-kcal="360  Kcal"
+    data-sugar="25g (25%)%"
+    data-prot="13g (23%)%"
+    data-fat="4.8g (32%)%"
+    data-na="120mg (6%)"
+  
+       
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/3.png" class="open-btn"
+       data-name="홀리데이 모엣샹동 케이크 세트"
+    data-eng="Holiday Moet & Chandon Cake Set"
+    data-desc="한 해의 마무리를 더욱 빛내줄 파티 감성을 담은 리미티드 세트
+특별한 순간을 샴페인의 황금빛 스파클처럼 화려하게 완성하세요"
+    data-kcal="330 Kcal"
+    data-sugar="19 (19%)"
+    data-prot="4g (7%)"
+    data-fat="16.0g (107%)"
+    data-na="237mg (12%)"
+    
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/4.png" class="open-btn"
+        data-name="설향 딸기숲 생크림 케이크"
+    data-eng="Strawberry Soop Fresh Cream Cake"
+    data-desc="딸기 생크림 케이크 위에 설향 생딸기 듬뿍! 모두가 사랑하는 딸기 홀케이크"
+    data-kcal="216  Kcal"
+    data-sugar="18g (18%)"
+    data-prot="3g (6%)"
+    data-fat="7.6g (51%)"
+    data-na="82mg (4%)%"
+   
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/5.png" class="open-btn"
+      data-name="딸기 쉬폰 케이크"
+    data-eng="Strawberry Chiffon Cake"
+    data-desc="폭신한 쉬폰에 설향 생딸기를 더한 시즌 한정 케이크"
+    data-kcal="243  Kcal"
+    data-sugar="11g (11%)"
+    data-prot="4g (7%)"
+    data-fat="7.0g (47%)"
+    data-na="102mg (5%)"
+    
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/6.jpg" class="open-btn"
+      data-name="춘식이 치즈브륄레 고구마"
+    data-eng="Cheese Brulee Sweet Potato"
+    data-desc="프랑스산 프레지덩 버터와 달콤한 꿀, 치즈의 단짠조합! 노릇노릇 따끈한 군고구마 *꿀 별도 제공"
+    data-kcal="357  Kcal"
+    data-sugar="34g (34%)"
+    data-prot="3g (5%)"
+    data-fat="8.2g (55%)"
+    data-na="95mg (5%)"
+    
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/7.jpg" class="open-btn"
+       data-name="초코춘식 가나슈 케이크"
+    data-eng="Chocolate Ganache Cake"
+    data-desc="초코 요정 춘식이의 진한 초콜릿 가나슈 마법으로 부드러운 초코 시트사이에 달콤함을 가득 채운 케이크"
+    data-kcal="479  Kcal"
+    data-sugar="32g (32%)"
+    data-prot="8g (14%)"
+    data-fat="15.9g (106%)"
+    data-na="280mg (14%)"
+
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/8.png" class="open-btn"
+        data-name="초코춘식의 쿠키앤크림"
+    data-eng="Chocolate Cookies & Cream Cake"
+    data-desc="요정 춘식이의 마법으로 완성한 시크릿 레시피! 진한 초코와 마스카포네 크림의 쿠키앤크림 케이크"
+    data-kcal="367 Kcal"
+    data-sugar="22 (22%)"
+    data-prot="5 (9%)"
+    data-fat="14.2 (95%)"
+    data-na="14.2 (95%)"
+   
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/9.png" class="open-btn"
+       data-name="춘식이의딸기생크림"
+    data-eng="Strawberry Shortcake"
+    data-desc="요정 춘식이의 마법으로 완성한 시크릿 레시피! 부드러운 생크림 케이크에 신선한 생딸기를 듬뿍 올린 케이크"
+    data-kcal="226 Kcal"
+    data-sugar="18 (18%)"
+    data-prot="3 (5%)"
+    data-fat="8.4 (56%)"
+    data-na="84 (4%)"
+
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/10.png" class="open-btn"
+        data-name="필리 치즈 스테이크 포카치아"
+    data-eng="Philly Cheesesteak Focaccia"
+    data-desc="직화로 구운 스테이크에 진한 체다치즈 소스, 각종 채소를 곁들인 포카치아 샌드위치"
+    data-kcal="350 Kcal"
+    data-sugar="9g (9)%"
+    data-prot="15g (27%)"
+    data-fat="8.0g (53%)"
+    data-na="1,440mg (72%)"
+ 
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/11.png" class="open-btn"
+        data-name="초코 생크림
+가득 카스텔라"
+    data-eng="Chocolate Cream Castella"
+    data-desc="달콤한 초코크림이 가득한 부드럽고 촉촉한 카스텔라"
+    data-kcal="614 Kcal"
+    data-sugar="63g (63%)"
+    data-prot="10g (18%)"
+    data-fat="19.9g (133%)"
+    data-na="291mg (15%)"
+    data-caf="-"
+    
+    
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/food/12.png" class="open-btn"
+    data-name="초코 티라미수 롤"
+    data-eng="Chocolate Tiramisu Roll Cake"
+    data-desc="에스프레소 풍미 가득한 진한 초코 시트에 마스카포네 크림이 어우러진 초코 티라미수 롤케이크"
+    data-kcal="314 Kcal"
+    data-sugar="23g (23%)"
+    data-prot="5g (9%)"
+    data-fat="9.0g (60%)"
+    data-na="117mg (6%)"
+    data-caf="-"
+    
+    
+    
+    
+    
+    
+    ></div>
+
+
+</div>
+
+<!--MD 상품 -->
+<div class="menu_list md" id="md_box">
+  <div class="item"><img src="./img/md/1.png" class="open-btn"
+     data-name="NEW YEAR TRAVEL SET"
+    data-eng="FAIRY CHUNSIK PADDING HOODED BLANKET (BLACK)"
+    data-desc="신년을 맞이하여 한 해의 여정을 응원하는 트래블 세트"
+
+
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/2.png" class="open-btn"
+      data-name="요정 춘식 패딩 후드 담요 (블랙)"
+    data-eng="FAIRY CHUNSIK PADDING HOODED BLANKET (BLACK)"
+    data-desc="하나의 담요로 세 가지 스타일을 즐길 수 있는 패딩 후드 담요"
+
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/3.png" class="open-btn"
+        data-name="요정 춘식 패딩백 (블랙)"
+    data-eng="FAIRY CHUNSIK PADDING BAG (BLACK)"
+    data-desc="14인치 노트북도 수납 가능한 포근한 겨울 감성을 담은 패딩백"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/4.png" class="open-btn"
+        data-name="요정 춘식 랜덤 피규어 키링"
+    data-eng="FAIRY CHUNSIK RANDOM FIGURE KEYRING"
+    data-desc="귀여운 요정 춘식이가 랜덤으로 들어있는 피규어 키링"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/5.png" class="open-btn"
+        data-name="요정 춘식 미니 키링 파우치"
+    data-eng="FAIRY CHUNSIK MINI KEYRING POUCH"
+    data-desc="귀여움과 실용성을 모두 담은 요정 춘식 미니 키링 파우치"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/6.png" class="open-btn"
+        data-name="핸디 라운드 텀블러 (초코요정 춘식)"
+    data-eng="HANDY ROUND TUMBLER (CHOCO FAIRY CHUNSIK)"
+    data-desc="튼튼한 스테인리스 316 소재와 완전 밀폐 구조로 샘 걱정 없이 오래 사용하는 데일리 텀블러"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/7.png" class="open-btn"
+        data-name="밴딩 슬리브 텀블러 (초코요정 춘식)"
+    data-eng="BENDING SLEEVE TUMBLER (CHOCO FAIRY CHUNSIK)"
+    data-desc="슬리브 탈착형 구조와 두 가지 타입의 음용구로 용도에 따라 다양하게 활용 가능한 2WAY 텀블러"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/8.png" class="open-btn"
+        data-name="핸디 라운드 텀블러 (고구마요정 춘식)"
+    data-eng="HANDY ROUND TUMBLER (SWEET POTATO FAIRY CHUNSIK)"
+    data-desc="튼튼한 스테인리스 316 소재와 완전 밀폐 구조로 샘 걱정 없이 오래 사용하는 데일리 텀블러"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/9.png" class="open-btn"
+        data-name="실리콘 핸들 티 텀블러 (요정 춘식)"
+    data-eng="SILICONE HANDLE TEA TUMBLER (FAIRY CHUNSIK)"
+    data-desc="내구성 좋은 스테인리스와 탈부착 가능한 티망, 부드러운 실리콘 핸들로 실용성을 높인 티 텀블러"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/10.png" class="open-btn"
+        data-name="할리베어 피규어 키링 (테이크아웃컵)"
+    data-eng="HOLLYBEAR FIGURE KEYRING (TAKE-OUT CUP)"
+    data-desc="테이크아웃 컵 참이 달린 귀여운 할리베어 키링"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/11.png" class="open-btn"
+        data-name="롤업 실리콘 텀블러 (레드)"
+    data-eng="ROLL UP SILICONE TUMBLER (RED)"
+    data-desc="돌돌말아 쏙! 간편하게 들고 다니는 롤업 실리콘 텀블러"
+    
+    
+    
+    
+    ></div>
+  <div class="item"><img src="./img/md/12.png" class="open-btn"
+        data-name="실리콘 핸들 티 텀블러 (요정 춘식)
+"
+    data-eng="SILICONE HANDLE TEA TUMBLER (FAIRY CHUNSIK)"
+    data-desc="내구성 좋은 스테인리스와 탈부착 가능한 티망, 부드러운 실리콘 핸들로 실용성을 높인 티 텀블러"
+    
+    
+  
+    
+    ></div>
+
+</div>
+
+
+<div class="more_box">
+<label for="more_btn" class="open">더보기</label>
+<label for="more_btn" class="close">닫기</label>
+</div>
+
+
+<!-- 
+<script>
+
+
+    const modal = document.getElementById('modal');
+    const openBtn = document.querySelectorAll('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+
+
+    openBtn.forEach(btn => {
+      btn.addEventListener('click', function(){
+        const name = btn.getAttribute('data-name');
+        const eng = btn.getAttribute('data-eng');
+        const desc = btn.getAttribute('data-desc');
+        const kcal = btn.getAttribute('data-kcal');
+        const sugar = btn.getAttribute('data-sugar');
+        const prot = btn.getAttribute('data-prot');
+        const fat = btn.getAttribute('data-fat');
+        const na = btn.getAttribute('data-na');
+        const caf = btn.getAttribute('data-caf');
+    
+        document.getElementById('modal-name').innerText =name;
+        document.getElementById('modal-eng').innerText =eng;
+        document.getElementById('modal-desc').innerText =desc;
+        document.getElementById('modal-kcal').innerText = "칼로리: " + kcal;
+        document.getElementById('modal-sugar').innerText = "당류: " + sugar;
+        document.getElementById('modal-prot').innerText = "단백질: " + prot;
+        document.getElementById('modal-fat').innerText = "포화지방: " + fat;
+        document.getElementById('modal-na').innerText = "나트륨: " + na;
+        document.getElementById('modal-caf').innerText = "카페인: " + caf;
+      modal.style.display = 'block';
+    });
+    });
+
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+
+
+  </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+      <div class="footer_menu">
+      
+        <p><a href="#!">개인정보 처리 방침 </a></p>
+      
+        <p><a href="#!">서비스이용약관</a></p>
+        <p><a href="#!">멤버십이용약관</a></p>
+        
+      </div>
+
+      <div class="footer_menu">
+        <p><a href="#!">할리스카드이용약관 </a></p>
+
+        <p><a href="#!">사이트맵 </a></p>
+        <p><a href="#!">BI 소개</a></p>
+        <p><a href="#!">고객문의 </a></p>
+        
+      </div>
+      
+  
+        <hr class="hr_bar01">
+
+      <div class="footer_text">
+        <p>법인명: (주)케이지에프앤비</p>
+        <p>대표자: 윤석찬</p>
+        <p>사업자등록번호: 211-87-61044</p>
+        <p>통신판매업: 제2019-서울종로-0193호</p>
+        <p>주소: 서울특별시 중구 통일로 92, 9층 (순화동,케이지타워)</p>
+        <p>대표전화: 02-2188-7100</p>
+        <p>가맹문의: 02-6350-7229</p>
+        <hr class="hr_bar01">
+        <p>COPYRIGHT &copy; KG F&B.All Right Reserved</p>
+      </div>
+
+
+      <div class="sns_box">
+    <a href="#!">  <img src="./img/insta01.JPG"></a>
+      <a href="#!">  <img src="./img/face.GIF"></a>
+      <a href="#!">  <img src="./img/youtu.GIF"></a>
+
+
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+<script src="sub_m.js"></script>
+</body>
+</html>
