@@ -26,10 +26,10 @@
 
 -GUI 가이드
 
+<img src = "https://github.com/user-attachments/assets/e0c6ae78-a4d9-4592-b904-bc426e26f86a" width = "200px" />
+<img src = "https://github.com/user-attachments/assets/19d63b37-47f0-4eeb-a515-df558861b9b2" width = "200px"/>
 <img src = "https://github.com/user-attachments/assets/d72e33ab-0fef-4047-879c-4d2b85891fcd" width = "200px"/>
 <img src = "https://github.com/user-attachments/assets/62a5f10b-504c-4b8b-9302-2fbcb0f64a33" width = "200px"/>
-<img src = "https://github.com/user-attachments/assets/19d63b37-47f0-4eeb-a515-df558861b9b2" width = "200px"/>
-<img src = "https://github.com/user-attachments/assets/e0c6ae78-a4d9-4592-b904-bc426e26f86a" width = "200px" />
 
 
 
