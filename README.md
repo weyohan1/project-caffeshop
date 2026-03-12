@@ -69,10 +69,11 @@
 
 ## 📌 프로젝트 주요 기능
 
-- Fullpage 스크롤 기반 페이지 구성
-- GSAP ScrollTrigger 애니메이션
-- 프로젝트 카드 Hover 인터랙션
-- 반응형 레이아웃
+- 상세 정보 모달 창
+- 카테고리별 메뉴 보기
+- 반응형 내비게이션 및 레이아웃
+- 아코디언 메뉴
+
 
 <br>
 
@@ -80,17 +81,18 @@
 ## 📌 프로젝트 구조
 ```
 project
- ├ index.html         #메인 페이지
- ├ index.PDP.html     #상세 페이지   
- ├ index.Sub.html     #서브 페이지
+ ├ index.html        #메인 페이지
+ ├ sub_m.html        #서브 drink페이지   
+ ├ sub_md.html       #서브 md 페이지
+ ├ sub_food.html     #서브 food 페이지
+ ├ sub_new.html      #서브 new 페이지
  │
  ├ css
- │   └ main.css 
- │   └ mainPDP.css 
- │   └ mainSub.css 
+ │   └ pmain.css 
+ │   └ sub_m.css
  ├ js
- │   └ main.js
- ├ home
+ │   └ sub_m.js
+ ├ img
  │   └ img
 ```
 
