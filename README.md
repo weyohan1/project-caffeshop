@@ -1,8 +1,11 @@
 
 ## 📌 팀 프로젝트 caffeshop 웹사이트
 
-
 ![caffeshop](https://github.com/user-attachments/assets/913e3075-6ab6-4bd4-87f2-713d44587e0d)
+
+📎 사이트 링크 : https://weyohan1.github.io/project-caffeshop/
+
+<br>
 
 
 ▷ 팀 프로젝트로 진행한 카페 브랜드 할리스 커피 포트폴리오 웹사이트입니다.  
@@ -70,11 +73,9 @@
 
 ## 📌 프로젝트 주요 기능
 
-- 반응형 레이아웃
-- 상세 정보 모달 창
-- 카테고리별 메뉴 보기
 - 반응형 내비게이션 및 레이아웃
-- 아코디언 메뉴
+- 상품 리스트 반응형 레이아웃 및 노출 개수 제어
+- 모바일 아코디언 메뉴
 
 
 <br>
@@ -103,40 +104,36 @@ project
 ## 📌 코드 리뷰
 
 
-## ✅코드 
+## ✅ 반응형 레이아웃
 
-1111111111111111
-22222222222222
-3333333333333
+<img src = "https://github.com/user-attachments/assets/56c679c3-416e-48ab-90c5-a8f0f2cf398e"> <br>
+<img src = "https://github.com/user-attachments/assets/cfa5e539-1a1e-4654-b84c-b25bb715ac3a"> <br>
+<img src = "https://github.com/user-attachments/assets/f22cf683-a407-45c1-baab-4f17fbf11f2f">
 
-11111111111
-222222222222
-3333
+- 미디어쿼리를 사용하여 구간에서 반응형 레이아웃이 적용되도록 구현했습니다.
+- 601px~768px
+- 769px ~ 1024px
+- 1025px
 
-
-
-
-##  ✅수정
-
-
-1111111111111111
-22222222222222
-3333333333333
-
-11111111111
-222222222222
-3333
-
-
-##  ✅수정
+<br>
 
 
 
-1111111111111111
-22222222222222
-3333333333333
+##  ✅ 상품 리스트 반응형 레이아웃 및 노출 개수 제어
+<img src = "https://github.com/user-attachments/assets/685d0c2a-88a9-48eb-86d1-85ae0dae5aaf"> <br>
+<img src = "https://github.com/user-attachments/assets/93fcc74b-0a71-4477-8bdd-0db6f8775cb0"> <br>
+<img src = "https://github.com/user-attachments/assets/80b7526f-5b27-4bf3-a283-73fcc813eb5f">
 
-11111111111
-222222222222
-3333
+- calc()를 활용해 상품 너비를 계산하여 반응형 레이아웃에 맞게 구현했습니다.
+- nth-child를 사용해 특정 개수 이상의 상품은 노출되지 않도록 제어했습니다.
+
+<br>
+
+##  ✅ 모바일 아코디언 메뉴
+
+<img src = "https://github.com/user-attachments/assets/911e6b9a-c92e-4b15-9388-0c947b84402c">
+<img src = "https://github.com/user-attachments/assets/8b777b21-19ae-4e3a-a11c-0a2ea1b7f10e">
+
+- 모바일 특성을 고려하여 아코디언 메뉴를 선택 하였고, 화면 공간을 효율적으로 활용하고, 메뉴 간의 계층 구조를 그룹화하여 구현했습니다.
+
 
