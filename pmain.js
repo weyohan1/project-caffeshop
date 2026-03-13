@@ -1,8 +1,7 @@
 $(function () {
   $("#accordion").accordion({
     header: "h3",
-    // heightStyle: "content",
-    // collapsible: true
+ 
   });
 });
 
@@ -26,52 +25,66 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-
-// new Swiper('.mainSwiper', {
-//   slidesPerView: 1,
-//   autoHeight: false,     // 중요
-//   observer: true,
-//   observeParents: true
-// });
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-//   const btns = document.querySelectorAll('.btn');
-//   const event_viewbox = document.querySelector('.event_viewbox');
-
-//   btns.forEach(btn => {
-//     btn.addEventListener('click', () => {
-
-//       // 지금 열려 있으면 닫기
-//       if (event_viewbox.style.display === 'block') {
-//         event_viewbox.style.display = 'none';
-//       } 
-//       // 닫혀 있으면 열기
-//       else {
-//         event_viewbox.style.display = 'block';
-//       }
-
-//     });
-//   });
-
-// });
-
-
+ 
 
 
 document.querySelectorAll('.btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelector('.event_viewbox img').src = btn.dataset.img;
   });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  var mainswiper = new Swiper(".mainSwiper", {
+    pagination: {
+      el: ".main-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".main-next",
+      prevEl: ".main-prev",
+    },
+  });
+
+
+    var menuswiper = new Swiper(".menuSwiper", {
+effect: "coverflow",
+grabCursor: true,
+centeredSlides: true,
+loop: true, 
+
+
+coverflowEffect: {
+rotate: 50,
+stretch: 0,
+depth: 100,
+modifier: 1,
+slideShadows: true,
+},
+
+
+pagination: {
+el: ".menu-pagination",
+clickable: true,
+},
+
+
+breakpoints: {
+0: { 
+slidesPerView: 1,
+},
+768:{
+  slidesPerView: 2,
+},
+1204: { 
+slidesPerView: 3,
+},
+},
+})
 });

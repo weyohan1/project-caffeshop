@@ -1,8 +1,6 @@
 $(function () {
   $("#accordion").accordion({
     header: "h3",
-    // heightStyle: "content",
-    // collapsible: true
   });
 
 
@@ -20,13 +18,6 @@ $(function () {
     const modal = document.getElementById('modal');
     const openBtn = document.querySelectorAll('.open-btn');
     const closeBtn = document.querySelector('.close-btn');
-//id modal로 설정한 값을 찾는다.
-//open-btn 중복 되는 클라스 는 querselectorall로 사용
-// close-btn 클라스 1개 사용시 querslelctoy 사용
-
-//querySelector → id, class, 태그, 속성 등 모든 CSS 선택자 사용 가능
-
-//getElementById → id 한정
 
     openBtn.forEach(btn => {
       btn.addEventListener('click', function(){
@@ -40,8 +31,6 @@ $(function () {
         const na = btn.getAttribute('data-na')|| "-";;
         const caf = btn.getAttribute('data-caf')|| "-";;
     
-//foreach는 반복문 각 동일한 버튼을 사용하려면 필요
-
 
         document.getElementById('modal-name').innerText =name;
         document.getElementById('modal-eng').innerText =eng;
@@ -53,9 +42,8 @@ $(function () {
         document.getElementById('modal-na').innerText = "나트륨: " + na;
         document.getElementById('modal-caf').innerText = "카페인: " + caf;
 
-        //영양소가 필요 없는 md상품 
-        // 만약  kcal이 - 일치하면 getelementbyid (id전용)는 /modal-kcal의 스타일은 숨겨라 , 그렇지 않으면  보여라 뜻
-        if (kcal === "-") { document.getElementById('modal-kcal').style.display = 'none'; } 
+  
+    if (kcal === "-") { document.getElementById('modal-kcal').style.display = 'none'; } 
     else { document.getElementById('modal-kcal').style.display = 'block'; }
 
     if (sugar === "-") { document.getElementById('modal-sugar').style.display = 'none'; } 

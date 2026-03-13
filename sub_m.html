@@ -5,28 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  
-  
   <link rel="stylesheet" href="sub_m.css">
-  <!-- <link rel="stylesheet" href="과제.js"> -->
-
-  
-
-  <!--jq-->
+  <script src="sub_m.js"defer></script> 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-
-<!--jq ui css-->
-  <!--https://jqueryui.com/accordion/#default 에서 디폴트 선택 후 밑에 복사-->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-
-
-
-    <!-- bxSlider JS (안정 버전 4.2.12) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
-    <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
 
 
 </head> 
@@ -58,7 +43,6 @@
     <div class="logo">
       <a href="index.html"><img src="./img/logo.JPG" class="logo_m"></a>
 
-      <!-- <a href="index.html"><img src="./img/logo01.JPG" class="logo_pc"></a> -->
 </div>
 
 <div class="pc_ver">
@@ -156,12 +140,12 @@
   
 <hr class="hr_bar">
 
-  <!-- 기존 아코디언 -->
+  <!--  아코디언 -->
   <h3 class="color">메뉴 <span>+</span></h3>
   <div>
   <p><a href="#!">신메뉴</a></p>
-  <p><a href="sub_food.html">푸드</a></p>
   <p><a href="sub_m.html">음료</a></p>
+  <p><a href="sub_food.html">푸드</a></p>
   <p><a href="sub_md.html">MD</a></p>
   
   </div>
@@ -952,87 +936,6 @@
 </div>
 
 
-<!-- 
-<script>
-
-
-    const modal = document.getElementById('modal');
-    const openBtn = document.querySelectorAll('.open-btn');
-    const closeBtn = document.querySelector('.close-btn');
-
-
-    openBtn.forEach(btn => {
-      btn.addEventListener('click', function(){
-        const name = btn.getAttribute('data-name');
-        const eng = btn.getAttribute('data-eng');
-        const desc = btn.getAttribute('data-desc');
-        const kcal = btn.getAttribute('data-kcal');
-        const sugar = btn.getAttribute('data-sugar');
-        const prot = btn.getAttribute('data-prot');
-        const fat = btn.getAttribute('data-fat');
-        const na = btn.getAttribute('data-na');
-        const caf = btn.getAttribute('data-caf');
-    
-        document.getElementById('modal-name').innerText =name;
-        document.getElementById('modal-eng').innerText =eng;
-        document.getElementById('modal-desc').innerText =desc;
-        document.getElementById('modal-kcal').innerText = "칼로리: " + kcal;
-        document.getElementById('modal-sugar').innerText = "당류: " + sugar;
-        document.getElementById('modal-prot').innerText = "단백질: " + prot;
-        document.getElementById('modal-fat').innerText = "포화지방: " + fat;
-        document.getElementById('modal-na').innerText = "나트륨: " + na;
-        document.getElementById('modal-caf').innerText = "카페인: " + caf;
-      modal.style.display = 'block';
-    });
-    });
-
-    closeBtn.addEventListener('click', function() {
-      modal.style.display = 'none';
-    });
-
-
-  </script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <footer class="footer">
@@ -1080,15 +983,5 @@
       </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-<script src="sub_m.js"></script>
 </body>
 </html>

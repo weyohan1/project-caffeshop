@@ -35,12 +35,11 @@ a{text-decoration: none; color: black;}
 #accordion {
  
   width: 50%;
-  /* color: white; */
+ 
   font-weight: bold;
-  position: fixed;      /* ⭐ 이게 핵심 */
-  top: 50px;            /* 헤더 아래 */
-  right: -150px;        /* 기본 숨김 */
-  /* width: 200px; */
+  position: fixed;      
+  top: 50px;        
+  right: -150px;        
   height: calc(100vh - 50px);
   background: #BA000D;
   transition: right 0.3s ease;
@@ -84,13 +83,13 @@ a{text-decoration: none; color: black;}
   color:  black;
   font-weight: bold;
    display: flex;
-  justify-content: space-between; /* 양 끝 정렬 */
+  justify-content: space-between; 
   align-items: center;
  
 }
 
 #accordion .ui-accordion-header.ui-state-active {
-  color: #fff;   /* 열렸을 때 */
+  color: #fff;   
 }
 
 
@@ -99,7 +98,7 @@ a{text-decoration: none; color: black;}
 
 #accordion .ui-accordion-header:hover,
 #accordion .ui-accordion-header.ui-state-active {
-  color: #fff;          /* hover + 열림 */
+  color: #fff;         
 }
 
 #accordion .ui-accordion-header-icon {
@@ -115,8 +114,7 @@ a{text-decoration: none; color: black;}
   width: 90px;
   margin-bottom: 10px;
   border-radius: 10px;
-  /* margin-left: 5px; */
-  /* margin: 0 auto; */
+
 }
 
 
@@ -194,11 +192,7 @@ a{text-decoration: none; color: black;}
 
 
 .logo {
-  /* width: 100%; */
-  /* border: 1px solid black; */
-  /* height: 50px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+
   
 }
 
@@ -211,14 +205,14 @@ a{text-decoration: none; color: black;}
 }
 
 .logo_text {
-  /* border: 1px solid black; */
+
   color: white;
   font-size: 24px;
   font-weight: bold;
   line-height: 50px;
 }
 .berge {
- /* width: 100%; */
+
   margin-top: 10px;
   margin-right: 10px;
 }
@@ -269,7 +263,7 @@ a{text-decoration: none; color: black;}
   text-align: center;
   line-height: 100px;
   background-color: #403a3a;
-  /* margin-top: 10px; */
+
 }
 
 /***위치****/
@@ -280,29 +274,6 @@ a{text-decoration: none; color: black;}
   text-align: right;
   margin-left: -10px;
 }
-
-/****메뉴 검색****/
-
-/* .menu_drink a {
-  color: white;
-}
-.menu_drink{
- 
-  transition: transform 0.3s;
-
-  background-color: #BA000D;
-  color: white;
-}
-
-.menu_drink p:hover {
-  cursor: pointer;
-}
-.menu_drink:hover {
-
-    transform: translateY(-5px);
- 
- 
-} */
 
 /**메뉴 버튼**/
 
@@ -329,7 +300,6 @@ a{text-decoration: none; color: black;}
 }
   
   .menu_buttons label {
-    /* flex: 1; */
     border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
@@ -344,7 +314,6 @@ a{text-decoration: none; color: black;}
   
 }
 
-/**이걸 보면 이해는 되는데 위에서 해결이 안되는 이유를 모르겟음**/
 #drink:checked ~ .menu_buttons label[for="drink"],
 #food:checked ~ .menu_buttons label[for="food"],
 #md:checked ~ .menu_buttons label[for="md"],
@@ -433,7 +402,6 @@ color: white;
     z-index: 9999; 
 }
 
-/* 모달 본체 (중앙 정렬) */
 .modal-body {
     position: absolute;
     top: 50%;
@@ -528,9 +496,6 @@ color: white;
   .menu_list .item {
   position: relative;
   margin-top: 50px;
-  /* background-color: #ca7575; */
-  /* background-color: #eee; */
-  /* border: 1px solid #403a3a; */
   border-radius: 10px;
   width: calc((100% - 10px)/2); 
 }
@@ -539,7 +504,6 @@ color: white;
    transform: scale(0.9);
 }
 
-  /* 모바일: 최대 4개 */
   .menu_list .item:nth-child(n+5) {
     display: none;
   }
@@ -599,159 +563,6 @@ color: white;
   }
 
 
-
-
-
-
-/********뷰박스*********/
-
-/* .view_box {
-  width: 100%;
-  height: 300px;
-
-  background-color: #eee;
-  margin-top: 30px;
-  position: relative;
-}
-
-.view_text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.view_text p:nth-child(2) {margin-top: 150px;} */
-
-/*************설명박스***/
-
-  /* .box {
-    margin-top: 50px;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-   transform: translateX(-50%);
-    z-index: 9999;
-
-    display: none;
-    width: 300px;
-    height: 260px;
-    border: 1px solid black;
-    background-color: #eee;
-    font-size: 10px;
-    text-align: center;
-    display: none;
-    color: #403a3a;
-    font-weight: bold;
-  }
-  
-  
-  .box.open{
-    display: block;
-  }
-
-  .hr_bar03 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .box_text {
-    margin: 10px;
- 
-
-  }
-  .box_text p:nth-child(1) {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .box_text01{
-   
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    margin: 10px;
-
-    
-  }
-  .box button {
-    color: white;
-    background-color: #BA000D;
-    font-size: 12px;
-    border-radius: 10px;
-    width: 130px;
-    height: 20px;
-    margin-top: 40px;
-  }
-.box a {
-  color: white;
-} */
-
-
-
-/*****여기 원래 박스***/
-/* 
-
-.box {
-  display:none;
-  position: relative;
-  top: -170px;
-  
-  background-color: white;
-  border-radius: 10px;
-  text-align: center;
-  left: 10px;
-  width: 300px;
-  height: 265px;
-  font-weight: bold;
- 
-}
-
-.detail_close {
-  position:absolute;
-  top:10px;
-  right:10px;
-  border:none;
-  background:none;
-  font-size:30px;
-  cursor:pointer;
-}
-
-
-.box_text{
-  /* border: 1px solid black; */
-  /* padding: 10px;
-}
-.box_text p:nth-child(1) {
-  font-size: 25px;
-  color: #BA000D;
-}
-.box01_text01 {
-
-  display: flex;
-  justify-content: space-between;
- 
-  margin: 5px;
-  font-size: 12px;
-}
-
-
-
-.menu_list .md_box .md_close_box {
-  display: none;
-} */
- 
-
-
-
-
-
-
-
-
-
-
-
-
 /****푸터***/
 .footer{
   margin-top: 50px;
@@ -769,12 +580,11 @@ color: white;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  /* text-align: center; */
   align-items: center;
   font-size: 13.9px;
   width: 100%;
    margin-top: 10px;
-     /* padding: 2px; */
+
      
 }
 
@@ -782,7 +592,6 @@ color: white;
 
 .footer_menu p:first-child::before {
   content: "| ";
-  /* margin: 5px; */
 }
 .footer_menu p::after {
   content: "|";
@@ -791,7 +600,6 @@ color: white;
 
 .footer_menu p:last-child::after {
   content: "|";
-  /* margin: 0 5px; */
 } 
 
 .footer p:hover {
@@ -814,7 +622,6 @@ color: white;
 .sns_box {
   margin-top: 30px;
   width: 100%;
-  /* position: relative; */
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -837,28 +644,6 @@ color: white;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media all and (min-width:768px) { */
 @media all and (min-width:601px) and (max-width:768px) {
 
   .header{
@@ -994,8 +779,6 @@ border-radius: 20px;
 
 
   }
-
-  /* @media all and (min-width: 1025px) and (max-width:2500px){ */
   @media all and (min-width: 769px) and (max-width:1024px){
 
 
@@ -1006,7 +789,6 @@ border-radius: 20px;
   justify-content: right;
   gap: 15px;
   
-  /* background-color: #ca7575; */
   
     }
 
@@ -1021,7 +803,6 @@ border-radius: 20px;
   font-weight: bold;
   color: #403a3a;
   margin-top: 10px;
-  /* border: 1px solid black; */
 }
 
 .menu_top li a:hover{
@@ -1061,7 +842,6 @@ font-weight: bold;
   height: 100px;
   text-align: center;
   position: relative;
-  /* border-bottom: 1px solid #ddd; */
   z-index: 9999;
 
 
@@ -1125,56 +905,11 @@ font-weight: bold;
     
     .pc_ver:hover .gnb_bg {
       height: 150px;
-      /* background-color: rgba(43, 70, 145, 0.8); */
         background-color: rgba(243, 246, 237, 0.75);
-      /* background-color: #f3f6ed; */
-      /* background-color: #eee; */
+
     
     }
 
-
-
-/**
-HEX	값 계산
-0	0
-9	9
-a	10
-b	11
-c	12
-d	13
-e	14
-f	15
-HEX값은 항상 두자리 = 한쌍으로 계산함
-
-background-color: #f3f6ed; -> f3, f6, ed, (투명도 조절 값) 
-
-=
-
-background-color: rgba(243, 246, 237, 0.75);
-
-f3 = 243  f=15,  3=3 (15x16+3)
-f6 = 246  f=15,  6=6 (15x16+6)
-ed= 237  e=14,  d=13 (14x16+13) 
-
-
-참고
-RGB 값 ( 값 , 값, 값, 투명도 조절 값)
-
-1.0	완전 불투명
-0.85	거의 안 비침
-0.75	은은한 반투명
-0.6	이미지 잘 보임
-0.4	많이 흐림**/
-
-
-/**z-index는 position이 있어야 사용 가능하며 
-z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨 
-따라서 여기서는 ul > li > ul > li에 포지션 앱솔이 먹혀 있고 
-서브메뉴(z-0), 배경화면(z-5) 이였기에 배경 밑에 깔려서 안보였던거임 
-
-
-
-    /*************************/
 
 
 
@@ -1212,7 +947,6 @@ z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨
         display: none; 
         position: absolute;
         top: 130px;
-        /* top: 100%; */
         left: 0;         
         width: 100%;    
         padding: 20px 0;
@@ -1253,7 +987,6 @@ z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨
   line-height: 100px;
   background-color: #403a3a;
   border-radius: 20px;
-  /* margin-top: 10px; */
 }
 
 
@@ -1330,7 +1063,6 @@ border-radius: 20px;
 .menucheck input[type="checkbox"] {
   width: 30px;          
   height: 30px;
-  /* margin-top: 10px;    */
 }
 
 
@@ -1342,9 +1074,7 @@ border-radius: 20px;
 
 
 .menu_list .item {
-  /* position: relative;  */
-  /* width: 100%; */
-  /* border: 1px solid yellow; */
+
 
 }
 
@@ -1391,7 +1121,6 @@ border-radius: 20px;
   justify-content: right;
   gap: 15px;
   
-  /* background-color: #ca7575; */
   
     }
 
@@ -1406,7 +1135,7 @@ border-radius: 20px;
   font-weight: bold;
   color: #403a3a;
   margin-top: 10px;
-  /* border: 1px solid black; */
+
 }
 
 .menu_top li a:hover{
@@ -1446,7 +1175,6 @@ font-weight: bold;
   height: 100px;
   text-align: center;
   position: relative;
-  /* border-bottom: 1px solid #ddd; */
   z-index: 9999;
 
 
@@ -1510,56 +1238,10 @@ font-weight: bold;
     
     .pc_ver:hover .gnb_bg {
       height: 150px;
-      /* background-color: rgba(43, 70, 145, 0.8); */
         background-color: rgba(243, 246, 237, 0.75);
-      /* background-color: #f3f6ed; */
-      /* background-color: #eee; */
     
     }
 
-
-
-/**
-HEX	값 계산
-0	0
-9	9
-a	10
-b	11
-c	12
-d	13
-e	14
-f	15
-HEX값은 항상 두자리 = 한쌍으로 계산함
-
-background-color: #f3f6ed; -> f3, f6, ed, (투명도 조절 값) 
-
-=
-
-background-color: rgba(243, 246, 237, 0.75);
-
-f3 = 243  f=15,  3=3 (15x16+3)
-f6 = 246  f=15,  6=6 (15x16+6)
-ed= 237  e=14,  d=13 (14x16+13) 
-
-
-참고
-RGB 값 ( 값 , 값, 값, 투명도 조절 값)
-
-1.0	완전 불투명
-0.85	거의 안 비침
-0.75	은은한 반투명
-0.6	이미지 잘 보임
-0.4	많이 흐림**/
-
-
-/**z-index는 position이 있어야 사용 가능하며 
-z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨 
-따라서 여기서는 ul > li > ul > li에 포지션 앱솔이 먹혀 있고 
-서브메뉴(z-0), 배경화면(z-5) 이였기에 배경 밑에 깔려서 안보였던거임 
-
-
-
-    /*************************/
 
 
 
@@ -1597,7 +1279,6 @@ z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨
         display: none; 
         position: absolute;
         top: 130px;
-        /* top: 100%; */
         left: 0;         
         width: 100%;    
         padding: 20px 0;
@@ -1638,7 +1319,6 @@ z-index 5 숫자가 작으면 아래 숫자자 크면 위에 배치 됨
   line-height: 100px;
   background-color: #403a3a;
   border-radius: 20px;
-  /* margin-top: 10px; */
 }
 
 
@@ -1715,7 +1395,6 @@ border-radius: 20px;
 .menucheck input[type="checkbox"] {
   width: 30px;          
   height: 30px;
-  /* margin-top: 10px;    */
 }
 
 
@@ -1727,9 +1406,6 @@ border-radius: 20px;
 
 
 .menu_list .item {
-  /* position: relative;  */
-  /* width: 100%; */
-  /* border: 1px solid yellow; */
 
 }
 

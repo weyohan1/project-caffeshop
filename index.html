@@ -4,34 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-
-
-
-
-<!--스나이퍼 링크-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
+  
   <link rel="stylesheet" href="pmain.css">
-
-
-  <!--jq-->
+<script src="pmain.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-
-<!--jq ui css-->
-  <!--https://jqueryui.com/accordion/#default 에서 디폴트 선택 후 밑에 복사-->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-
-
-
-    <!-- bxSlider JS (안정 버전 4.2.12) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
-    <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
 
 
 
@@ -69,7 +52,7 @@
     <div class="logo">
       <a href="index.html"><img src="./img/logo.JPG" class="logo_m"></a>
 
-      <!-- <a href="index.html"><img src="./img/logo01.JPG" class="logo_pc"></a> -->
+      
 </div>
 
 <div class="pc_ver">
@@ -169,12 +152,12 @@
   
 <hr class="hr_bar">
 
-  <!-- 기존 아코디언 -->
+  <!--  아코디언 -->
   <h3 class="color">메뉴 <span>+</span></h3>
   <div>
   <p><a href="sub_new.html">신메뉴</a></p>
-  <p><a href="sub_food.html">푸드</a></p>
   <p><a href="sub_m.html">음료</a></p>
+  <p><a href="sub_food.html">푸드</a></p>
   <p><a href="sub_md.html">MD</a></p>
   </div>
 
@@ -327,13 +310,12 @@
   <a href="#!"><img src="./img/member/membership02.png"></a>
   <a href="#!"><img src="./img/member/membership03.png"></a>
   <a href="#!"><img src="./img/member/membership04.png"></a>
-<!-- <a href="#!" class="text_slide"><p>할리스 멤버십에 가입하세요!</p></a> -->
 <a href="#!"><img src="./img/member/membership05.png"></a>
  <a href="#!"><img src="./img/member/membership06.png"></a>
 
 </div>
 </div>
-<!-- <button class="member_btn"><a href="#!">멤버십 가입</a></button>  -->
+
 
 
 
@@ -344,7 +326,7 @@
 <div class="store_box">
   <a href="#!"><img src="./img/store_img.jpg"></a>
   <button><a href="#!">E - 스토어</a></button> 
-<!-- </div> -->
+
 
 <div class="store_text">
   <a href="#!">
@@ -358,8 +340,6 @@
   <br>
   </a>
   <img src="./img/store_t.JPG">
-
- <!-- <img src="./img/story_t01.JPG" class="store_001"> -->
 </div>
 </div>
 
@@ -389,7 +369,6 @@
     <input type="search" class="search_box"placeholder=" 검색어를 입력하세요.">
 <p><a href="https://m.hollys.co.kr/store/korStore2.do" class="search_map">전체 매장찾기</a></p>
 
-<!-- <input type="button" value="전체 매장찾기" class="btn"  onclick="execDaumPostcode()"><br> -->
 </div>
 
 </div>
@@ -434,10 +413,6 @@
         <p class="btn" data-img="./img/event02-1.jpg">[NEW] "춘식이 세트" 따듯한 겨울 보내세요.</p>
         
     <p>2026/01/11 ~ 2026/02/18</p>
- 
-       <!-- <p>2025/12/11</p>
-       <p>~</p>
-       <p>2026/01/18</p> -->
     </div>
 
 
@@ -449,11 +424,6 @@
         <p class="btn" data-img="./img/event03-1.jpg">[NEW] "지개함 티라미수 케이크 출시"
         사전 예약 하세요.</p>
 <p>2026/01/11 ~ 2026/04/28</p>
-
-    
-      <!-- <p>2025/12/11</p>
-      <p>~</p>
-      <p> 2025/12/20</p> -->
     </div>
     
 
@@ -593,65 +563,6 @@
 
 
 
-<script src="pmain.js"></script>
-
-
-<!--메인-->
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var mainswiper = new Swiper(".mainSwiper", {
-    pagination: {
-      el: ".main-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".main-next",
-      prevEl: ".main-prev",
-    },
-  });
-  </script>
-
-<!--메뉴-->
- <!-- Initialize Swiper -->
-  <script>
-   var menuswiper = new Swiper(".menuSwiper", {
-effect: "coverflow",
-grabCursor: true,
-centeredSlides: true,
-loop: true, // ← loop 추가 (핵심)
-
-
-coverflowEffect: {
-rotate: 50,
-stretch: 0,
-depth: 100,
-modifier: 1,
-slideShadows: true,
-},
-
-
-pagination: {
-el: ".menu-pagination",
-clickable: true,
-},
-
-
-breakpoints: {
-0: { // 모바일
-slidesPerView: 1,
-},
-768:{
-  slidesPerView: 2,
-},
-1204: { // PC
-slidesPerView: 3,
-},
-},
-});
-  </script>
 
 
 </body>
