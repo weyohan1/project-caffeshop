@@ -117,8 +117,14 @@ project
 
 <br>
 
+## ⭕ 반응형 레이아웃 구현 결과
 
+<br>
+<img src = "https://github.com/user-attachments/assets/af59b95f-faff-4575-9308-d1c3d2b4ea9e" width ="500px" />
 
+<br>
+
+ 
 ##  ✅ 상품 리스트 반응형 레이아웃 및 노출 개수 제어
 <img src = "https://github.com/user-attachments/assets/685d0c2a-88a9-48eb-86d1-85ae0dae5aaf"> <br>
 <img src = "https://github.com/user-attachments/assets/93fcc74b-0a71-4477-8bdd-0db6f8775cb0"> <br>
@@ -129,10 +135,30 @@ project
 
 <br>
 
+## ⭕  상품 리스트 반응형 레이아웃 및 노출 개수 제어 구현 결과
+
+<br>
+
+<img src = "https://github.com/user-attachments/assets/5ddfd5e7-d8dd-43d0-8722-85cb9756df8f" width ="500px" />
+
+
+<br>
+
+
 ##  ✅ 모바일 아코디언 메뉴
 
 <img src = "https://github.com/user-attachments/assets/911e6b9a-c92e-4b15-9388-0c947b84402c">
 <img src = "https://github.com/user-attachments/assets/8b777b21-19ae-4e3a-a11c-0a2ea1b7f10e">
+
+<br>
+
+
+## ⭕  모바일 아코디언 메뉴 구현 결과
+
+<br>
+
+<img src = "https://github.com/user-attachments/assets/785ed21e-25ec-422f-973f-864bd1987a1a" />
+
 
 - 모바일 특성을 고려하여 아코디언 메뉴를 선택 하였고, 화면 공간을 효율적으로 활용하고, 메뉴 간의 계층 구조를 그룹화하여 구현했습니다.
 
