@@ -120,7 +120,8 @@ project
 ## ⭕ 반응형 레이아웃 구현 결과
 
 <br>
-<img src = "https://github.com/user-attachments/assets/af59b95f-faff-4575-9308-d1c3d2b4ea9e" width ="500px" />
+
+https://github.com/user-attachments/assets/904d286f-0291-407a-867d-9c65aed3b581
 
 <br>
 
@@ -139,7 +140,7 @@ project
 
 <br>
 
-<img src = "https://github.com/user-attachments/assets/5ddfd5e7-d8dd-43d0-8722-85cb9756df8f" width ="500px" />
+https://github.com/user-attachments/assets/b56fa7c6-126c-41a9-9c0e-3dd5f7c59eff
 
 
 <br>
@@ -157,7 +158,7 @@ project
 
 <br>
 
-<img src = "https://github.com/user-attachments/assets/785ed21e-25ec-422f-973f-864bd1987a1a" />
+https://github.com/user-attachments/assets/f062f6ac-6af4-49c4-8909-0150dee14d2d
 
 
 - 모바일 특성을 고려하여 아코디언 메뉴를 선택 하였고, 화면 공간을 효율적으로 활용하고, 메뉴 간의 계층 구조를 그룹화하여 구현했습니다.
